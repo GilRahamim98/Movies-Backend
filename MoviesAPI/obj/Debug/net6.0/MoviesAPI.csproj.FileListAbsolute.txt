@@ -25,8 +25,3 @@ E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\refint\MoviesAPI.dll
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.pdb
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.genruntimeconfig.cache
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\ref\MoviesAPI.dll
-E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets\msbuild.MoviesAPI.Microsoft.AspNetCore.StaticWebAssets.props
-E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.MoviesAPI.props
-E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MoviesAPI.props
-E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MoviesAPI.props
-E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets.pack.json
