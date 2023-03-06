@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MoviesAPI.Services;
+
 using MoviesAPI.Entities;
+
 
 namespace MoviesAPI.Controllers
 {
@@ -8,50 +9,43 @@ namespace MoviesAPI.Controllers
     [ApiController]
     public class GenresController:ControllerBase
     {
-        private readonly IRepository repository;
+        private readonly ILogger<GenresController> logger;
 
-        public GenresController(IRepository repository)
+        public GenresController(ILogger<GenresController> logger)
         {
-            this.repository = repository;
+            this.logger = logger;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Genre>>> Get()
         {
-            return await repository.GetAllGenres();
+            return new List<Genre>() { new Genre() {id=1,Name="דרמה" } };
         }
         [HttpGet("{id:int}")]
-        public ActionResult<Genre> Get(int id,string param2)
-        {
+        public ActionResult<Genre> Get(int id)
+        {   
+            throw new NotImplementedException();
             
-            var genre = repository.GetGenreById(id);
-            if (genre == null)
-            {
-               return NotFound();
-            }
-            return genre;
+            
         }
 
         [HttpPost]
         public ActionResult Post([FromBody] Genre genre)
         {
-            repository.AddGenre(genre);
-    
-            return NoContent();
-
+            throw new NotImplementedException();
         }
 
         [HttpPut]
-        public ActionResult Put()
+        public ActionResult Put([FromBody] Genre genre)
         {
-            return NoContent();
+            throw new NotImplementedException();
 
 
         }
         [HttpDelete]
         public ActionResult Delete()
         {
-            return NoContent();
+            throw new NotImplementedException();
 
 
         }

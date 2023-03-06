@@ -4,8 +4,8 @@
     "\\MoviesAPI",
     "\\MoviesAPI\\Controllers",
     "\\MoviesAPI\\Entities",
-    "\\MoviesAPI\\Services"
+    "\\MoviesAPI\\Filters"
   ],
-  "SelectedNode": "\\MoviesAPI\\Controllers\\GenresController.cs",
+  "SelectedNode": "\\MoviesAPI\\bin",
   "PreviewInSolutionExplorer": false
 }

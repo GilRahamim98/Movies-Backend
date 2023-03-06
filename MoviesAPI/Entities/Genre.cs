@@ -6,7 +6,7 @@ namespace MoviesAPI.Entities
     {
         public int id { get; set; }
         [Required(ErrorMessage ="זהו שדה חובה!")]
-        [StringLength(15)]
+        [StringLength(50)]
         public string Name { get; set; }
     }
 }
