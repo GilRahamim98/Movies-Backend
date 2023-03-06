@@ -13,9 +13,21 @@ namespace MoviesAPI.Services
                 new Genre(){id=2,Name="אקשן"}
             };
         }
-        public List<Genre> GetAllGenres()
+        public async Task<List<Genre>> GetAllGenres()
         {
+            await Task.Delay(1);
             return _genres;
+        }
+        public Genre GetGenreById(int Id)
+        {
+            return _genres.FirstOrDefault(x => x.id == Id);
+
+        }
+        public void AddGenre(Genre genre)
+        {
+            genre.id=_genres.Max(x => x.id)+1;
+            _genres.Add(genre);
+
         }
     }
 }
