@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MoviesAPI",
+    "\\MoviesAPI\\Controllers",
+    "\\MoviesAPI\\Entities",
+    "\\MoviesAPI\\Services"
+  ],
+  "SelectedNode": "\\MoviesAPI\\Controllers\\GenresController.cs",
+  "PreviewInSolutionExplorer": false
+}
