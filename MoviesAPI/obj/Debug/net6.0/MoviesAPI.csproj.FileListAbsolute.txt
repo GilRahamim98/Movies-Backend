@@ -87,3 +87,4 @@ E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\runtimes\browser\lib\ne
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\AutoMapper.dll
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.staticwebassets.runtime.json

@@ -14,10 +14,10 @@ using Microsoft.Extensions.Hosting;
 using MoviesAPI;
 using MoviesAPI.APIBehavior;
 using MoviesAPI.Filters;
+using MoviesAPI.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
-
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add(typeof(ParseBadRequest));
@@ -36,7 +36,8 @@ builder.Services.AddCors(options =>
     });
 });
 builder.Services.AddAutoMapper(typeof(Program));
-
+builder.Services.AddScoped<IFileStorageService, InAppStorageService>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
@@ -48,6 +49,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseRouting();
 app.UseCors();
 
