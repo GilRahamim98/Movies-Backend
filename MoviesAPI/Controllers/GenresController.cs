@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MoviesAPI.DTOs;
 using MoviesAPI.Entities;
-
+using MoviesAPI.Helpers;
 
 namespace MoviesAPI.Controllers
 {
@@ -10,16 +12,26 @@ namespace MoviesAPI.Controllers
     public class GenresController:ControllerBase
     {
         private readonly ILogger<GenresController> logger;
+        private readonly ApplicationDBContext context;
+        private readonly IMapper mapper;
 
-        public GenresController(ILogger<GenresController> logger)
+        public GenresController(ILogger<GenresController> logger
+            ,ApplicationDBContext context,
+            IMapper mapper)
         {
             this.logger = logger;
+            this.context = context;
+            this.mapper = mapper;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Genre>>> Get()
+        [HttpGet] // api/genres
+        public async Task<ActionResult<List<GenreDTO>>> Get([FromQuery] PaginationDTO paginationDTO)
         {
-            return new List<Genre>() { new Genre() {id=1,Name="דרמה" } };
+            var queryable=context.Genres.AsQueryable();
+            await HttpContext.InsertParametersPagnationInHeader(queryable);
+            var genres= await queryable.OrderBy(x=>x.Name).Paginate(paginationDTO).ToListAsync();
+            return mapper.Map<List<GenreDTO>>(genres);
+          
         }
         [HttpGet("{id:int}")]
         public ActionResult<Genre> Get(int id)
@@ -30,9 +42,12 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody] Genre genre)
+        public async Task<ActionResult> Post([FromBody] GenreCreationDTO genreCreationDTO)
         {
-            throw new NotImplementedException();
+            var genre=mapper.Map<Genre>(genreCreationDTO);
+            context.Add(genre);
+            await context.SaveChangesAsync();
+            return NoContent();
         }
 
         [HttpPut]
