@@ -92,3 +92,4 @@ E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.EntityFramewo
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.dll
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
 E:\WorkSpace\movies\MoviesAPI\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
+E:\WorkSpace\movies\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
