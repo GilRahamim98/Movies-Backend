@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\36314a0e-9a5c-4de0-b083-c2470d796cbf.jpg",
+      "PackagePath": "staticwebassets\\actors\\36314a0e-9a5c-4de0-b083-c2470d796cbf.jpg"
+    },
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\8c88b6e9-4de3-4e2b-9d89-612bb1b30e7d.jpg",
+      "PackagePath": "staticwebassets\\actors\\8c88b6e9-4de3-4e2b-9d89-612bb1b30e7d.jpg"
+    },
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\fb0560be-a454-4b8e-9282-12cd4808784e.jpg",
+      "PackagePath": "staticwebassets\\actors\\fb0560be-a454-4b8e-9282-12cd4808784e.jpg"
+    },
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\4f4282dc-6e08-4a02-a2f3-5761c9a3e141.jpg",
+      "PackagePath": "staticwebassets\\movies\\4f4282dc-6e08-4a02-a2f3-5761c9a3e141.jpg"
+    },
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\53838ddc-de24-4d51-a6ab-7cc22cdb999e.jpg",
+      "PackagePath": "staticwebassets\\movies\\53838ddc-de24-4d51-a6ab-7cc22cdb999e.jpg"
+    },
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\562a9c1b-3162-4c15-9e22-d1cfb022cd61.jpg",
+      "PackagePath": "staticwebassets\\movies\\562a9c1b-3162-4c15-9e22-d1cfb022cd61.jpg"
+    },
+    {
+      "Id": "E:\\WorkSpace\\movies\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\d6ccb9a4-ccb5-400e-b833-675e743b8266.jpg",
+      "PackagePath": "staticwebassets\\movies\\d6ccb9a4-ccb5-400e-b833-675e743b8266.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MoviesAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MoviesAPI.props",
+      "PackagePath": "build\\MoviesAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MoviesAPI.props",
+      "PackagePath": "buildMultiTargeting\\MoviesAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MoviesAPI.props",
+      "PackagePath": "buildTransitive\\MoviesAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
